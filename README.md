@@ -1,7 +1,5 @@
 # iTunesSearch
 
-- You must install a pod to run the iTunesSearch.
-
 Architectures
 - MVVM
 - UnitTest
