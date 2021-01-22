@@ -41,8 +41,12 @@ class SearchViewController: BaseViewController, UISearchBarDelegate,UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchCell", for: indexPath) as! SearchCell
-        let result = self.baseResult?[indexPath.row]
-        cell.setUI(searchResult: result)
+        
+        if baseResult != nil && baseResult!.count > 0 {
+            let result = self.baseResult?[indexPath.row]
+            cell.setUI(searchResult: result)
+            
+        }
         return cell
     }
     

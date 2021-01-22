@@ -7,17 +7,9 @@
 
 import XCTest
 @testable import iTunesSearch
-@testable import Mocker
 import Alamofire
 
 class SearchViewModelTest: XCTestCase {
-//
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-//        self.mockService = MockApiService()
-//        searchViewModel = .init(apiService: mockService)
-    }
-    
     
     func testSearchViewModel() {
         let e = expectation(description: "AF")
